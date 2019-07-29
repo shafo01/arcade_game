@@ -63,6 +63,7 @@ var Engine = (function(global) {
      * game loop.
      */
     function init() {
+        document.getElementById("overlay").style.display = "none";
         reset();
         lastTime = Date.now();
         main();
@@ -89,11 +90,7 @@ var Engine = (function(global) {
                 // reset();
                 player.y = -5;
                 stop = true;
-                var winCanvas = document.getElementsByTagName("canvas");
-                let ctx = winCanvas[0].getContext('2d');
-
-                ctx.font = "30px Arial";
-                ctx.fillText("Hello World", 100, 300);
+                document.getElementById("overlay").style.display = "block";
 
 
             }
@@ -104,9 +101,11 @@ var Engine = (function(global) {
 
 
     function checkCollisions() {
-        //go through each enemy and see if any collide with the player
-        //each sprite is 101 by 171
-        //if enemy.x+50 
+
+        /** Go through each enemy and see if any collide with the player.
+         * Each sprite is 101 by 171.
+         * Check if their difference in both x and y coordinates is approximately half way the same 
+         */
 
         allEnemies.forEach(function(enemy) {
 
@@ -199,13 +198,11 @@ var Engine = (function(global) {
     function reset() {
         // noop
 
-        var canvas = doc.createElement('div')
-        canvas.innerHTML = "You win!!!";
-    
         player.reset();
         allEnemies.forEach(function(enemy) {
             enemy.reset();
         });
+
 
     }
 
