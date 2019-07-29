@@ -17,10 +17,15 @@ This game was created as one my Udacity's challenge.
 ### Run the Game
 To run the game:
 
+1. Go to https://shafo01.github.io/arcade_game/index.html
+
+#### Or
+
 1. Download project from the master branch.
 2. Unzipped downloaded file. 
 3. In unzipped folder, you will index.html.
 4. Right click, and open with any browser of your choice, such as Chrome.
+
 
 <a name="play-the-game"></a>
 ### Play the Game
