@@ -4,8 +4,8 @@
 
 - [About](#about)
 - [Instructions](#instructions)
-    - [Run the Game](#run the game)
-    - [Play the Game](#play the game)
+    - [Run the Game](#run-the-game)
+    - [Play the Game](#play-the-game)
 - [Resources](#resources)
 
 
@@ -13,6 +13,7 @@
 This game was created as one my Udacity's challenge.
 ## Instructions
 
+<a name="run-the-game"></a>
 ### Run the Game
 To run the game:
 
@@ -21,6 +22,7 @@ To run the game:
 3. In unzipped folder, you will index.html.
 4. Right click, and open with any browser of your choice, such as Chrome.
 
+<a name="play-the-game"></a>
 ### Play the Game
 To start playing game:
 
