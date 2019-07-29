@@ -6,7 +6,13 @@ var Enemy = function() {
     // The image/sprite for our enemies, this uses
     // a helper we've provided to easily load images
     this.sprite = 'images/enemy-bug.png';
+
+    /**
+     * The enemy is initiated with a starting x and y coordinate position 
+     */
+
     this.x = -60;
+
     /**
      * This is to avoid players from colliding with each other
      * Players have their own territory to safe guard
@@ -32,9 +38,9 @@ Enemy.prototype.update = function(dt) {
     // all computers.
     this.x += (dt * this.speed);
 
-
-
-    //this.x = this.x + 1;
+    /**
+     * Reposition the enemy when it has exit the game area.
+     */
     if (this.x > 460) {
         this.x = -60;
         //enemy render between 240 and 60
@@ -91,31 +97,27 @@ var Player = function() {
 
     this.handleInput = function(keyCode) {
 
-        if (keyCode == 'left') {
+        if (keyCode === 'left') {
             if (this.x >= 100) {
-                //this.x = this.x - 100;
                 this.xPosition -= 100;
             }
-        } else if (keyCode == 'up') {
+        } else if (keyCode === 'up') {
             if (this.y >= 0) {
-                //this.y = this.y - 40;
                 this.yPosition -= 40;
-                console.log(this.y);
             }
-        } else if (keyCode == 'right') {
+        } else if (keyCode === 'right') {
             if (this.x <= 310) {
-                //this.x = this.x + 100;
                 this.xPosition += 100;
             }
-        } else if (keyCode == 'down') {
+        } else if (keyCode === 'down') {
 
             //10 is buffer
+
             if (this.y <= 410) {
                 this.yPosition += 40;
-                console.log(this.y);
             }
         }
-        console.log(`Meow! My name is ${this.x}`);
+
     };
 
 
