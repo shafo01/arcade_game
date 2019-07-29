@@ -2,19 +2,47 @@
 
 ## Table of Contents
 
+- [About](#about)
 - [Instructions](#instructions)
-- [Contributing](#contributing)
+    - [Run the Game](#run-the-game)
+    - [Play the Game](#play-the-game)
+- [Resources](#resources)
 
+
+## About
+This game was created as one my Udacity's challenge.
 ## Instructions
 
-Use this [rubric](https://review.udacity.com/#!/rubrics/15/view) for self-checking your submission.
+<a name="run-the-game"></a>
+### Run the Game
+To run the game:
 
-Make sure the functions you write are **object-oriented** - either class functions (like `Player` and `Enemy`) or class prototype functions such as `Enemy.prototype.checkCollisions`. Also make sure that the keyword `this` is used appropriately within your class and class prototype functions to refer to the object the function is called upon.
+1. Download project from the master branch.
+2. Unzipped downloaded file. 
+3. In unzipped folder, you will index.html.
+4. Right click, and open with any browser of your choice, such as Chrome.
 
-Your **README.md** file should be updated with instructions on both how to 1. Run and 2. Play your arcade game.
+<a name="play-the-game"></a>
+### Play the Game
+To start playing game:
 
-For detailed instructions on how to get started, check out this [guide](https://docs.google.com/document/d/1v01aScPjSWCCWQLIpFqvg3-vXLH2e8_SZQKC8jNO0Dc/pub?embedded=true).
+1. Use the arrow keys (▲, ▼, ◀, ▶ ) to move the player.
+2. The player shouldn't collide with the bugs. Every time the player collides with the bugs then the game is reset.
+3. You aim is to reach the water blocks at the top. Once you reach the top you win the game!
 
-## Contributing
 
-This repository is the starter code for _all_ Udacity students. Therefore, we most likely will not accept pull requests.
+### Resources
+This game started off with Udacity's starter code at:
+https://github.com/udacity/frontend-nanodegree-arcade-game
+
+Whilst accomplishing some of the tasks to complete the game I gained helped from the following sources:
+
+1. For creating the overlay: w3schools https://www.w3schools.com/howto/howto_css_overlay.asp
+
+2. For generating random numbers within a range: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/random
+
+### Technologies Used
+This game was created with Html5, CSS and JavaScript.
+
+
+
